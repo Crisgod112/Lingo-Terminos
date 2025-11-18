@@ -31,7 +31,7 @@ export default function PrivacyNotice() {
       <nav className="mb-8 bg-gray-50 dark:bg-gray-800/50 rounded-lg p-4 border border-gray-200 dark:border-gray-700">
         <button
           onClick={() => setIsTableOfContentsOpen(!isTableOfContentsOpen)}
-          className="w-full flex items-center justify-between font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 focus-visible">
+          className="w-full flex items-center justify-between font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded">
           <span className="flex items-center">
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -48,16 +48,16 @@ export default function PrivacyNotice() {
         </button>
         {isTableOfContentsOpen && (
           <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 text-sm">
-            <button onClick={() => scrollToSection('identidad')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus-visible px-2 py-1 rounded">1. Identidad del Responsable</button>
-            <button onClick={() => scrollToSection('datos-recopilados')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus-visible px-2 py-1 rounded">2. Datos Recopilados</button>
-            <button onClick={() => scrollToSection('finalidades')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus-visible px-2 py-1 rounded">3. Finalidades del Tratamiento</button>
-            <button onClick={() => scrollToSection('menores')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus-visible px-2 py-1 rounded">4. Datos de Menores</button>
-            <button onClick={() => scrollToSection('terceros')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus-visible px-2 py-1 rounded">5. Transferencias a Terceros</button>
-            <button onClick={() => scrollToSection('cookies')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus-visible px-2 py-1 rounded">6. Cookies y Tecnologías</button>
-            <button onClick={() => scrollToSection('derechos-arco')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus-visible px-2 py-1 rounded">7. Derechos ARCO</button>
-            <button onClick={() => scrollToSection('revocacion')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus-visible px-2 py-1 rounded">8. Revocación</button>
-            <button onClick={() => scrollToSection('seguridad')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus-visible px-2 py-1 rounded">9. Medidas de Seguridad</button>
-            <button onClick={() => scrollToSection('cambios')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus-visible px-2 py-1 rounded">10. Cambios al Aviso</button>
+            <button onClick={() => scrollToSection('identidad')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 px-2 py-1 rounded">1. Identidad del Responsable</button>
+            <button onClick={() => scrollToSection('datos-recopilados')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 px-2 py-1 rounded">2. Datos Recopilados</button>
+            <button onClick={() => scrollToSection('finalidades')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 px-2 py-1 rounded">3. Finalidades del Tratamiento</button>
+            <button onClick={() => scrollToSection('menores')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 px-2 py-1 rounded">4. Datos de Menores</button>
+            <button onClick={() => scrollToSection('terceros')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 px-2 py-1 rounded">5. Transferencias a Terceros</button>
+            <button onClick={() => scrollToSection('cookies')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 px-2 py-1 rounded">6. Cookies y Tecnologías</button>
+            <button onClick={() => scrollToSection('derechos-arco')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 px-2 py-1 rounded">7. Derechos ARCO</button>
+            <button onClick={() => scrollToSection('revocacion')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 px-2 py-1 rounded">8. Revocación</button>
+            <button onClick={() => scrollToSection('seguridad')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 px-2 py-1 rounded">9. Medidas de Seguridad</button>
+            <button onClick={() => scrollToSection('cambios')} className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-500 px-2 py-1 rounded">10. Cambios al Aviso</button>
           </div>
         )}
       </nav>
@@ -79,8 +79,8 @@ export default function PrivacyNotice() {
               <div>
                 <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-2">Datos de Contacto:</h3>
                 <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1">
-                  <li><strong>Sitio web:</strong> <a href="https://lingosec.io" className="text-primary-600 dark:text-primary-400 hover:underline focus-visible">https://lingosec.io</a></li>
-                  <li><strong>Email de privacidad:</strong> <a href="mailto:privacidad@lingosec.io" className="text-primary-600 dark:text-primary-400 hover:underline focus-visible">privacidad@lingosec.io</a></li>
+                  <li><strong>Sitio web:</strong> <a href="https://lingosec.io" className="text-primary-600 dark:text-primary-400 hover:underline focus:outline-none focus:ring-2 focus:ring-primary-500 rounded">https://lingosec.io</a></li>
+                  <li><strong>Email de privacidad:</strong> <a href="mailto:privacidad@lingosec.io" className="text-primary-600 dark:text-primary-400 hover:underline focus:outline-none focus:ring-2 focus:ring-primary-500 rounded">privacidad@lingosec.io</a></li>
                 </ul>
               </div>
               <div>
@@ -359,25 +359,25 @@ export default function PrivacyNotice() {
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors">
                   <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">Mailgun</td>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Envío de emails</td>
-                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">🇺🇸 Estados Unidos</td>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Estados Unidos</td>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Envío de correos electrónicos transaccionales</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors">
                   <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">Vercel/Upstash</td>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Base de datos</td>
-                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">🇺🇸 Estados Unidos</td>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Estados Unidos</td>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Almacenamiento en base de datos (Vercel KV)</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors">
                   <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">Google (reCAPTCHA)</td>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Validación anti-spam</td>
-                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">🇺🇸 Estados Unidos</td>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Estados Unidos</td>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Validación anti-spam</td>
                 </tr>
                 <tr className="hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors">
                   <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">Vercel Analytics</td>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Análisis web</td>
-                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">🇺🇸 Estados Unidos</td>
+                  <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Estados Unidos</td>
                   <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Análisis de uso de la plataforma</td>
                 </tr>
               </tbody>

@@ -30,11 +30,8 @@ export default function ExampleForm({ onOpenPrivacyModal }: ExampleFormProps) {
   return (
     <div className="max-w-2xl mx-auto p-4 sm:p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
-        Ejemplo: Formulario de Lista de Espera
+        Formulario de Lista de Espera
       </h2>
-      <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-4 sm:mb-6">
-        Este es un ejemplo de cómo integrar los checkboxes de privacidad en un formulario real.
-      </p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Nombre */}

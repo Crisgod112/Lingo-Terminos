@@ -15,7 +15,5 @@
 }
 
 @layer utilities {
-  .focus-visible:focus {
-    @apply outline-2 outline-primary-500 outline-offset-2;
-  }
+  /* Utilidades personalizadas si es necesario */
 }

@@ -104,7 +104,7 @@ export default function PrivacyCheckboxes({ onOpenPrivacyModal, isMinor = false 
         </p>
         {isMinor && !parentalConsent && (
           <p className="text-red-600 dark:text-red-400 mt-2">
-            ⚠️ Se requiere consentimiento parental para continuar
+            Se requiere consentimiento parental para continuar
           </p>
         )}
       </div>
