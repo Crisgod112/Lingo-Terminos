@@ -181,46 +181,7 @@ function App() {
                 </p>
               </div>
             </div>
-
-            {/* Información adicional */}
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700/50 rounded-lg p-8 border border-gray-200 dark:border-gray-700">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Componentes Disponibles
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Aviso de Privacidad Completo</h3>
-                  <p className="text-gray-700 dark:text-gray-300">Página completa con todas las secciones, tabla de contenidos navegable, y diseño responsive.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Modal Resumido</h3>
-                  <p className="text-gray-700 dark:text-gray-300">Versión condensada en modal para quick-reference con scroll interno.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Banner de Cookies</h3>
-                  <p className="text-gray-700 dark:text-gray-300">Banner configurable con preferencias granulares y localStorage.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Checkboxes de Formulario</h3>
-                  <p className="text-gray-700 dark:text-gray-300">Componente reutilizable con consentimiento parental para menores.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Tabla ARCO Responsive</h3>
-                  <p className="text-gray-700 dark:text-gray-300">Tabla interactiva con información sobre derechos ARCO.</p>
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-2">Modo Oscuro</h3>
-                  <p className="text-gray-700 dark:text-gray-300">Toggle de tema claro/oscuro con persistencia en localStorage.</p>
-                </div>
-              </div>
-
-              <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg">
-                <p className="text-sm text-gray-700 dark:text-gray-300">
-                  <strong>Stack Tecnológico:</strong> React 19, TypeScript, Tailwind CSS, Vite
-                </p>
-              </div>
-            </div>
-
+            
             {/* Contacto */}
             <div className="mt-8 text-center">
               <p className="text-gray-600 dark:text-gray-400">
